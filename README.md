@@ -62,7 +62,8 @@ Each request item should display all the information contained in the request, w
 - scheme 
 - query-string 
 - query-params 
-- cookies - headers
+- cookies 
+- headers
 
 Also include a copy of the raw response, hidden by default, opened by clicking a link.
 
