@@ -8,8 +8,8 @@ class CreateTrapRequests < ActiveRecord::Migration
       t.text :query_string
       t.text :query_params
       t.text :cookies
-      t.text :raw
-
+      t.text :headers
+      t.text :response
       t.timestamps null: false
     end
   end

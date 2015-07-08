@@ -1,13 +1,13 @@
 FactoryGirl.define do
   factory :trap_request, :class => 'Trap::Request' do
-    trap nil
-remote_ip "MyString"
-request_method "MyString"
-scheme "MyString"
-query_string "MyText"
-query_params "MyText"
-cookies "MyText"
-raw "MyText"
+    trap
+    remote_ip { Faker::Internet.ip_v4_address }
+    request_method 'POST'
+    scheme  'http'
+    query_string 'localhost:3000?param=value'
+    query_params { Hash.new('param' => 'value') }
+    cookies { Hash.new('hello' => 'world') }
+    headers {}
   end
 
 end

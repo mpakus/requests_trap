@@ -24,7 +24,8 @@ ActiveRecord::Schema.define(version: 20150708121635) do
     t.text     "query_string"
     t.text     "query_params"
     t.text     "cookies"
-    t.text     "raw"
+    t.text     "headers"
+    t.text     "response"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end

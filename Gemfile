@@ -30,15 +30,10 @@ group :test, :development do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
 
-  gem "rspec-rails", "~> 3.0"
-  gem "factory_girl_rails", "~> 4.0"
-  gem "faker"
-  # gem "capybara"
-  gem "database_cleaner"
+  gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'faker'
+  gem 'database_cleaner'
   gem 'rubocop', require: false
-  # gem 'poltergeist', '~> 1.6.0'
   gem 'awesome_print'
 end
-
-gem 'paranoia', '~> 2.0' # soft delete functional for AR models
-
