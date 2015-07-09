@@ -1,0 +1,46 @@
+<h1>Request</h1>
+
+<table class="table table-striped table-hover table-bordered">
+  <tr>
+    <td>ID</td>
+    <td><%= @request.id %></td>
+  </tr>
+  <tr>
+    <td>Date & Time</td>
+    <td><%= l @request.created_at %></td>
+  </tr>
+  <tr>
+    <td>Remote IP</td>
+    <td><%= @request.remote_ip %></td>
+  </tr>
+  <tr>
+    <td>Request method</td>
+    <td><%= @request.request_method %></td>
+  </tr>
+  <tr>
+    <td>Scheme</td>
+    <td><%= @request.scheme %></td>
+  </tr>
+  <tr>
+    <td>Query string</td>
+    <td><%= @request.query_string %></td>
+  </tr>
+  <tr>
+    <td>Query params</td>
+    <td><%= show_json @request.query_params %></td>
+  </tr>
+  <tr>
+    <td>Cookies</td>
+    <td><%= show_json @request.cookies %></td>
+  </tr>
+  <tr>
+    <td>Headers</td>
+    <td><%= show_json @request.headers %></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <h3>Response</h3>
+      <pre><%= @request.response %></pre>
+    </td>
+  </tr>
+</table>

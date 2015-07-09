@@ -9,9 +9,11 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem 'puma'
+gem 'bootstrap-sass', '~> 3.3.5'
 
 group :development do
   gem 'better_errors'
@@ -22,6 +24,7 @@ group :development do
 end
 
 group :production do
+  gem 'rails_12factor'
   gem 'utf8-cleaner'
 end
 

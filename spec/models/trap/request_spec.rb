@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Trap::Request, type: :model do
+describe Trap::Request, type: :model do
   context 'json serialize' do
     it 'query_params' do
       req = create(:trap_request, query_params: {hello: 'world'})
