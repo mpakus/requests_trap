@@ -1,0 +1,21 @@
+<h1>Requests</h1>
+
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Date & Time</th>
+    <th>URI</th>
+  </tr>
+  </thead>
+
+  <tbody id="requests">
+    <%= render @trap.requests.desc_by_created %>
+  </tbody>
+</table>
+
+<% content_for :javascript do %>
+  <script type="text/javascript">
+    window.stream_path = '<%= stream_request_path(trap_uri: @trap.uri, id: @trap.id) %>';
+  </script>
+<% end %>

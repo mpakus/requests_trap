@@ -1,0 +1,5 @@
+<tr>
+  <td><%= request.id %></td>
+  <td><%= l request.created_at %></td>
+  <td><%= link_to request.query_string, request_path(trap_uri: request.trap.uri, id: request.id) %></td>
+</tr>

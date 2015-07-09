@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  def render_error(message, code=500)
+  def render_error(message, code = 500)
     respond_to do |format|
       format.html { send("show_#{code}") }
       format.json { render json: { error: message }, status: code }
@@ -19,6 +19,6 @@ class ApplicationController < ActionController::Base
   end
 
   def render_404
-    render('404 page not found', 404)
+    render_error('404 page not found', 404)
   end
 end
