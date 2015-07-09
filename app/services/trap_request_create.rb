@@ -14,7 +14,6 @@ class TrapRequestCreate
 
       trap_id:        trap.id
     }
-    ap @params
   end
 
   def create!
